@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!--Bootstrap 5 Links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <link href="http://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="http://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+  <style>
+    @media screen and (max-width: 767px) {
+
+      .logotext {
+        font-size: 1.8em;
+      }
+
+      .navbar {
+        position: relative;
+      }
+
+      .dropdown {
+        padding-right: 80px;
+        padding-left: 15px;
+      }
+
+      .nav-link {
+        width: 180px;
+        height: 50px;
+      }
+
+      .container {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 3em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 800;
+        background-color: #504e4e;
+        color: #f5ecec
+      }
+
+      /*tab styles*/
+      .imgsymbol {
+        padding-top: 30px;
+        width: 100%;
+        height: 450px;
+      }
+
+      #v-pills-home {
+        margin-bottom: 50px;
+        border: solid thin #c6c7c8;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      h3 {
+        font-family: sans-serif;
+        font-weight: 500;
+        text-decoration: underline;
+        margin-left: 20px;
+      }
+
+      #tabtext {
+        line-height: 1.8em;
+        font-size: 1.2em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      /*card styles*/
+
+      .card-title {
+        text-align: center;
+        background-color: #504e4e;
+        color: #f5ecec;
+      }
+
+      .card-text {
+        height: 180px;
+      }
+    }
+
+    /*Medium Screen*/
+    @media screen and (min-width: 768px) {
+
+      .logotext {
+        font-size: 1.3em;
+        padding-right: 50px;
+      }
+
+      a {
+        color: #f5ecec;
+        text-decoration: none;
+      }
+
+      ul {
+        gap: 10px;
+      }
+
+      li {
+        border-right: solid white;
+        padding-right: 10px;
+      }
+
+      .container {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 3.5em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        background-color: #504e4e;
+        color: #f5ecec
+      }
+
+      /*tab styles*/
+      .imgsymbol {
+        padding-top: 30px;
+        width: 100%;
+        max-width: 600px;
+        height: 450px;
+      }
+
+      #v-pills-home {
+        margin-bottom: 50px;
+        border: solid thin #c6c7c8;
+        border-radius: 10px;
+        padding: 25px;
+      }
+
+      h3 {
+        font-size: 2em;
+        font-family: sans-serif;
+        font-weight: 500;
+        text-decoration: underline;
+      }
+
+      #tabtext {
+        line-height: 1.7em;
+        font-size: 1.3em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      /*card styles*/
+
+      .card-title {
+        text-align: center;
+        background-color: #504e4e;
+        color: #f5ecec;
+        font-size: 1.5em;
+        font-weight: 600;
+      }
+
+      .card-text {
+        height: 220px;
+        font-size: 1.3em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+    }
+
+    @media screen and (min-width: 992px) {
+
+      .carousel-item img {
+        height: 800px;
+        width: 100%;
+
+      }
+
+      .logo {
+        padding-right: 25px;
+      }
+
+      .logotext {
+        font-size: 2.5em;
+        padding-right: 200px;
+      }
+
+      .container-fluid{
+        max-width: 1250px;
+      }
+
+    }
+
+    .symbols {
+      margin-left: 30px;
+      padding-top: 10px;
+    }
+
+    .logo {
+      height: 90px;
+    }
+
+    .navbar {
+      background-color: #0e0101c2;
+      width: 100%;
+      z-index: 1;
+    }
+
+    a {
+      color: #f5ecec;
+      text-decoration: none;
+    }
+
+    ul {
+      gap: 20px;
+    }
+
+    li {
+      border-right: solid white;
+      padding-right: 20px;
+    }
+
+    .navbar-brand {
+      font-size: 1.6em;
+      font-weight: 700;
+    }
+
+    .carousel-caption {
+      background-color: #080505ce;
+      border-radius: 15px;
+      padding-bottom: 40px;
+    }
+
+    .btn {
+      background-color: #0e0101c2;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light md-position-absolute lg-py-3">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <a src="images/Logo.png" class="logotext" href="index.html"><img class="logo" src="images/Logo.png">South Korea</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="active" aria-current="page" href="History.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a href="Present.html">Present</a>
+            </li>
+            <li class="nav-item">
+              <a href="Geography.html">Geography</a>
+            </li>
+            <li class="nav-item">
+              <a href="Culture.html" aria-disabled="true">Culture</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+  <hr>
+  <h1>Korean Symbols</h1>
+  <hr>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-11 mx-auto">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <p class="symbols">National Symbols:</p>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Menu</a>
+            <div class="dropdown-menu">
+              <button class="btn nav-link btn-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                aria-selected="true">Tiger</button>
+              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Mugunghwa</button>
+              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                aria-selected="false">Taekwondo</button>
+              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                aria-selected="false">Kimchi</button>
+            </div>
+          </li>
+        </ul>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="row">
+              <h3 class="col-12">National Animal: Siberian Tiger</h3>
+              <p id="tabtext" class="col-lg-6">The National animal of South Korea, the Siberian Tiger is an important
+                symbol of thier
+                culture.
+                Unfortunately, while there is are no longer any tigers in
+                the wild in South Korea the country was once known as the "Land of Tigers". Previously, Korean people
+                were
+                also knonw as "the people who know how to tame the tiger". A
+                large compliment for Tigers are the largest cats in the world! They have a striking pattern of orange
+                and
+                black stripes that act as camouflage when they hunt alone at
+                night. The Tigers population has seen itself stabilize over the last decade, although the species is
+                still
+                considered endangered.
+              </p>
+              <img class="imgsymbol col mx-auto d-block" src="images/Tiger.jpg">
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+            <div class="row">
+              <h3 class="col-12">National Flower: Mugungwha</h3>
+              <p id="tabtext" class="col-lg-6">The Mugungwha also known as the rose of sharon is the national flower of
+                South
+                Korea. The
+                flower
+                in considered an object which represents deep affection.
+                The flower is a strong symbol for love with a meaning which translates to "eternal blossom that never
+                fades".
+                The flower has remained an important symbols in Korean
+                culture for many centuries. Those who cherish the national flower do so because it honors the country's
+                many
+                successes and tribulations and stands as the country's
+                noble spirit throughout its many experiences.
+              </p>
+              <img class="imgsymbol col mx-auto d-block" src="images/Hibiscus_Syriacus.JPG">
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            <div class="row">
+              <h3 class="col-12">National Sport: Taekwondo</h3>
+              <p id="tabtext" class="col-lg-6">One of Koreas most recognized sports is that of its national sport -
+                Taekwondo.
+                While its
+                origins
+                come from as a form of self-defence it is now an
+                established sport worldwide. The word "Taekwondo" consists of the words for "foot", "fist" and "art". A
+                more
+                direct translation could be "the art of the foot and the
+                fist". A match of Taekwondo has 2 participants. The goal is to use kicking and punching on the opponents
+                head
+                and torso to gain points while avoiding from being struck
+                yourself. Matches have three 2 minutes rounds with one-minute breaks in between the rounds. Extra points
+                are
+                awarded to players who perform more advance techniques to
+                land hits while faliing or exiting the matted area results in penalisation.
+              </p>
+              <img class="imgsymbol col mx-auto d-block" src="images/taekwondo.jpg">
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+            <div class="row">
+              <h3 class="col-12">National Food: Kimchi</h3>
+              <p id="tabtext" class="col-lg-6">While alos the name of the national dish of South Korea, Kimchi also
+                refers to
+                the process of
+                fermenting vegetables. Kimchi is typically made with napa
+                cabbage, Korean radish and sometimes cucumberand is traditionally made by adding a paste of chili garlic
+                and
+                fish sauce to this mix. The fermenting process has a wide
+                range of timespans including several months all the way up to several years. Korean ancestors once
+                practiced
+                burying kimchi jars in the ground during the winter season,
+                as fermented foods can keep for several years. The benfits of eating Kimchi come from that it is a low
+                calorie, low fat and cholesterol free food. It is very healthy
+                and a widely enjoyed food throughout the country though it has seen little promotion to countries
+                overseas.
+              </p>
+              <img class="imgsymbol col mx-auto d-block" src="images/kimchi.jpg">
+            </div>
+          </div>
+
+          <hr>
+          <h1>Korean Dishes</h1>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="card">
+                <img src="Images/bibimbap.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bibimbap</h5>
+                  <p class="card-text">The term "bibim" meaning "mixing" and "bap" meaning cooked rice. Bibimbap is a
+                    bowl of warm rice topped with sauted and
+                    seasoned vegetables. Common additions include raw / fried egg and sliced beef.</p>
+                </div>
+                <h5 class="card-title">Key Ingredients</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Vegetables: such as Beansprouts, Spinach, Cucumber, Carrots</li>
+                  <li class="list-group-item">Beef</li>
+                  <li class="list-group-item">White Rice</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <img src="Images/soondae.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sundae</h5>
+                  <p class="card-text">Commonly, a popular street food. Sundae is a form of blood sausage, typically
+                    made from cow or pig intestines stuffed with various ingredients</p>
+                </div>
+                <h5 class="card-title">Key Ingredients</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Intestines, seonji (blood) and minced meats</li>
+                  <li class="list-group-item">White rice / Cellophane noodles</li>
+                  <li class="list-group-item">Stuffings: Soybean paste, Barley, Soybean Sprouts, etc</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

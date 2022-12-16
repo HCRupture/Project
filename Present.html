@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!--Bootstrap 5 Links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <style>
+    @media screen and (max-width: 767px) {
+
+      .carousel-item img {
+        height: 400px;
+        width: 1200px;
+      }
+
+      .logotext {
+        font-size: 1.8em;
+      }
+
+      .navbar {
+        position: relative;
+      }
+
+      .imgcollapse {
+        height: 300px;
+      }
+
+      .btn-secondary {
+        width: 100%;
+      }
+
+    }
+
+    @media screen and (min-width: 768px) {
+
+      .logotext {
+        font-size: 1.3em;
+        padding-right: 50px;
+      }
+
+      a {
+        color: #f5ecec;
+        text-decoration: none;
+      }
+
+      ul {
+        gap: 10px;
+      }
+
+      li {
+        border-right: solid white;
+        padding-right: 10px;
+      }
+
+      .carousel {
+        position: absolute;
+        top: 0%;
+      }
+
+      .carousel-item img {
+        height: 600px;
+        width: 1200px;
+      }
+
+    }
+
+    @media screen and (min-width: 992px) {
+
+      .carousel-item img {
+        height: 800px;
+        width: 100%;
+
+      }
+
+      .logo {
+        padding-right: 25px;
+      }
+
+      .logotext {
+        font-size: 2.5em;
+        padding-right: 200px;
+      }
+
+    }
+
+    .logo {
+      height: 90px;
+    }
+
+    .navbar {
+      background-color: #0e0101c2;
+      width: 100%;
+      z-index: 1;
+    }
+
+    a {
+      color: #f5ecec;
+      text-decoration: none;
+    }
+
+    ul {
+      gap: 20px;
+    }
+
+    li {
+      border-right: solid white;
+      padding-right: 20px;
+    }
+
+    .navbar-brand {
+      font-size: 1.6em;
+      font-weight: 700;
+    }
+
+    h1 {
+      text-align: center;
+      padding-bottom: 60px;
+    }
+
+    .imgcollapse {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light md-position-absolute lg-py-3">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <a src="images/Logo.png" class="logotext" href="index.html"><img class="logo" src="images/Logo.png">South
+          Korea</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="active" aria-current="page" href="History.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a href="Present.html">Present</a>
+            </li>
+            <li class="nav-item">
+              <a href="Geography.html">Geography</a>
+            </li>
+            <li class="nav-item">
+              <a href="Culture.html" aria-disabled="true">Culture</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <h1 class="">South Korean Culture of the Modern Era</h1>
+        <div class="col-4">
+          <img class="imgcollapse" src="images/oldboy.jpg">
+          <a class="btn btn-secondary mb-3" data-bs-toggle="collapse" href="#multiCollapseFilm" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample1">Korean Film</a>
+        </div>
+        <div class="col-4">
+          <img class="imgcollapse" src="images/psy.PNG">
+          <a class="btn btn-secondary mb-3" data-bs-toggle="collapse" href="#multiCollapseKPop" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample1">Modern Music</a>
+        </div>
+        <div class="col-4">
+          <img class="imgcollapse" src="images/demo.PNG">
+          <a class="btn btn-secondary mb-3" data-bs-toggle="collapse" href="#multiCollapseDemo" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample1">Demographics Today</a>
+        </div>
+
+        <div class="row">
+          <div class="collapse multi-collapse" id="multiCollapseFilm">
+            <div class="card card-body">
+              <p>In Korea from a period ranging from 1919 to 1945, only about 160 films were produced. Whereas between
+                1954 to 1970 over 2,000 films were produced. From the tax exemption measures, the introduction of the
+                latest film making machine and an ever-increase of new movie goers conditions began to greatly
+                encouraged
+                Korean filmmakers. In a short timeframe, new genres like teen movies and literary films emerged
+                beginning in the early 1960's. One of Koreas most celebrated classic films: Kim Ki-young's The Housemaid
+                was released in 1960.</p>
+            </div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseKPop">
+            <div class="card card-body">
+              <p>Korean popular music or simply "K-pop" for short is a form of music originating in South Korea. It's a
+                massive part
+                of modern Korean pop culture with a wide range of influences styles and genres ranging from hip-hop,
+                R&B, Rock, Jazz
+                Reggae, Country Disco, Classical, etc. The term first became popular in the 90's, though it's exact
+                origins likely
+                date back even further.
+              </p>
+              <p>While K=pop can refer to just about all popular music from South Korea, the term is often associated
+                almost indistinguishably
+                with the "idol" industry. Idol culture first emerged in the 90's as a subculture that grew immensely off
+                the back of teens
+                and young adults. Idol culture continues to grow today not only within its border but internationally as
+                well. The spread of
+                K-pop can be seen in many parts of asia, africa the middle east and even North America.
+              </p>
+            </div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseDemo">
+            <div class="card card-body">
+              <p>South Korea is expected to hit a population of 51.78 million by 2038. A slight slump from a peak
+                population of 51.84 million
+                people in 2020. South Korea's population growth rate has slowed significantly as shown by decreasing
+                fertility rates. The lowest
+                rates in the world, that of 0.92, meaning women are having less than 1 child on average. factors
+                including high education costs
+                and home prices along with difficulty returning to work after giving birth are putting many women off
+                from having kids.
+              </p>
+              <p>South Korea's extremely low fertility rate will result in a rapidly increasing aging population. Almost
+                half of South Korea is
+                expected to be over the age of 65 by 2065. Korea is not a particularly religious country either with
+                less than half of the
+                population stating they have any religious beliefs. Korea is also what is known as a homogenous society
+                meaning that Korea has a
+                population that is over 99% Korean in ethnic background.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="collapse multi-collapse" id="multiCollapseArt">
+            <div class="card card-body">
+              <p>The history of Korean art can be traced back to the ancient times, when people began decorating the
+                walls of their homes with paintings
+                made out of mud and clay. These paintings were often done in bright colors and simple designs. During
+                the Joseon Dynasty (1392-1910), Korean
+                painters became famous for their skill in creating beautiful paintings depicting scenes from everyday
+                life.</p>
+              <p>Around the same time that the interest in realistic landscape surged, so too did the practice of
+                painting realistic scenes of ordinary people living
+                ordinary lives. Genre painting is one of the unique characteristics of Korean art. It provides an
+                insight into the everyday life of Koreans during the
+                Joseon Dynasty. Among the greatest of the genre painters was Kim Hong-do, whose paintings f everyday
+                scenes from Korea's past give us a glimpse into the
+                daily lives of his fellow countrymen. Another great genre painter was Shin Yun-bock, who painted many
+                pictures depicting the erotic side of life in risque
+                scenes which were both romantic and sensual.
+              </p>
+            </div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapseCraft">
+            <div class="card card-body">
+              <h4>Kettle made of celadon, made in the 12th century during the Goryeo Dynasty</h4>
+              <p>The Goryeo Dynasty lasted from 1848 to 1912 and is most famous for its porcelain. This style originated
+                from China, yet Korean artists elevated it to a higher
+                level, thus leading the Chinese themselves to call Korean crafts and pottery “the first under heaven.”
+                In order to reduce the amount of oxygen in a kiln, a
+                blue-green hue is produced, a glaze known as “kingfish color.” This ceramic ware depicts fish, fruits,
+                and mythical creatures in an unfettered style.
+            </div>
+          </div>
+          <div class="collapse multi-collapse" id="multiCollapsestruct">
+            <div class="card card-body">
+              <p>Korean architecture is marked by its use of wood and stone to create sophisticated multi-roomed
+                structures. Clay tile roofing, interior courtyards and gardens,
+                and a raised platform are all characteristic features of this architectural style. Another important
+                element of Korean architecture is its harmony with nature.
+                Buildings are designed to blend into their natural surroundings and take advantage of scenic views. This
+                can be seen in fortification walls and tombs across Korea,
+                from Bronze Age dolmens to huge vaulted enclosures of ancient kings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <a class="btn btn-secondary mt-3" data-bs-toggle="collapse" href="#multiCollapseArt" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample1">Paintings</a>
+          <img class="imgcollapse" src="images/jeongseon.jpg">
+        </div>
+        <div class="col-4">
+          <a class="btn btn-secondary mt-3" data-bs-toggle="collapse" href="#multiCollapseCraft" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample1">Traditional Art</a>
+          <img class="imgcollapse" src="images/pottery.PNG">
+        </div>
+        <div class="col-4">
+          <a class="btn btn-secondary mt-3" data-bs-toggle="collapse" href="#multiCollapsestruct" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample1">Architecture</a>
+          <img class="imgcollapse" src="Images/pagoda.jpg">
+        </div>
+
+        <h1>South Korean Culture and Inventions of the Past</h1>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>
