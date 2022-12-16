@@ -41,6 +41,18 @@
                 display: none;
             }
 
+            h1{
+            font-size: 2.4em;
+            text-align: center;
+            font-family: sans-serif;
+            text-decoration: underline;
+            }
+
+            .homebox p{
+            font-size: 1.2em;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
         }
 
         @media screen and (min-width: 768px) {
@@ -85,6 +97,19 @@
                 font-size: 20px;
             }
 
+            h1{
+            font-size: 2.6em;
+            text-align: center;
+            font-family: sans-serif;
+            text-decoration: underline;
+            }
+
+            .homebox p{
+            font-size: 1.4em;
+            line-height: 1.3em;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
         }
 
         @media screen and (min-width: 992px) {
@@ -118,9 +143,27 @@
 
             .carousel {
                 max-width: 1250px;
-
             }
 
+            h1{
+            font-size: 2.9em;
+            text-align: center;
+            font-family: sans-serif;
+            text-decoration: underline;
+            margin-bottom: 30px;
+            }
+
+            .homebox p{
+            font-size: 1.5em;
+            line-height: 1.2em;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+        }
+
+        .homebox{
+            background-color: #f8f5f5;
+            border: solid thin #7c7777;
         }
 
         .carousel {
@@ -159,6 +202,7 @@
         .btn {
             background-color: #0e0101c2;
         }
+
     </style>
 </head>
 
@@ -193,7 +237,7 @@
                 </div>
             </div>
         </nav>
-
+        
         <div id="carouselCaption" class="carousel" data-bs-ride="carousel">
 
             <div class="carousel-inner">
@@ -222,7 +266,7 @@
                         <h5>Agricultural Heritage</h5>
                         <p>Blanketed in soft, rolling hills of beautifully landscaped tea hedges, Daehan Dawon is one of the world's biggest producers of green-tea</p>
                         <button type="button" class="btn btn-outline-light"><a
-                                href="Geography.html">LearnMore</a></button>
+                                href="Geography.html">Learn More</a></button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -245,10 +289,26 @@
                         aria-label="Slide 4"></button>
                 </div>
             </div>
-
-
-
+            <div class="container-fluid mt-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="homebox">
+                            <h1 class="mt-3">South Korea</h1>
+                            <p class="col-11 col-md-10 mx-auto d-block">South Korea is a highly developed country with a high rank on the Human Development index (HDI). It's
+                                Citizens enjoy a good quality of life due in part to it's rapid growth as one of the largest economies
+                                in the world of the past several decades.
+                            </p>
+                            <p class="col-11 col-md-10 mx-auto d-block">Originally as the Korean Empire was succeeded and annexed into the Empire of Japan in 1910 after Japan
+                                surrender in WW2 in 1945, Korea was divided into two zones. North and South. Both zones were occupied, the 
+                                North being occupied by the Soviet Union and the South occupied by the United States. Negotiations for 
+                                reunification have not pulled through to this day. Officially, South Korea is known as the Republic of Korea (ROK)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        
 
 
     </div>
