@@ -40,6 +40,8 @@
         border: solid thin #121212;
       }
 
+
+
     }
 
     @media screen and (min-width: 768px) {
@@ -104,6 +106,19 @@
         border: solid 2px #121212;
       }
 
+      h1{
+        height: 60px;
+        border-radius: 5px;
+      }
+
+      .toplabel, .bottomlabel{
+        min-width: 900px;
+      }
+
+    }
+
+    body{
+      background-color: #c1c5c8;
     }
 
     .logo {
@@ -135,9 +150,12 @@
       font-weight: 700;
     }
 
-    h1 {
+    h1{
       text-align: center;
-      padding-bottom: 60px;
+      margin-bottom: 60px;
+      background-color: #504e4e;
+      color: #f5ecec;
+      margin-top: 10px;
     }
 
     .imgcollapse {
@@ -181,7 +199,7 @@
 
     <div class="container-fluid col-lg-10">
       <div class="row">
-        <h1 class="">South Korean Culture of the Modern Era</h1>
+        <h1 class="toplabel mt-3 mx-auto d-block">South Korean Culture of the Modern Era</h1>
         <div class="col-4">
           <img class="imgcollapse mx-auto d-block" src="images/oldboy.jpg">
           <a class="btn btn-secondary mb-3 mx-auto d-block mt-md-2" data-bs-toggle="collapse" href="#multiCollapseFilm" role="button"
@@ -207,7 +225,9 @@
                 encouraged
                 Korean filmmakers. In a short timeframe, new genres like teen movies and literary films emerged
                 beginning in the early 1960's. One of Koreas most celebrated classic films: Kim Ki-young's The Housemaid
-                was released in 1960.</p>
+                was released in 1960.
+                Korea has also produced the first non-English-language movie to win the best picture award at the Oscars.
+                The award was Given to Parasite (2019) Directed by Bong Joon-Ho.</p>
             </div>
           </div>
           <div class="collapse multi-collapse" id="multiCollapseKPop">
@@ -315,7 +335,7 @@
           <img class="imgcollapse mx-auto d-block" src="Images/pagoda.jpg">
         </div>
 
-        <h1>South Korean Culture and Inventions of the Past</h1>
+        <h1 class="bottomlabel mt-3 mx-auto d-block">South Korean Culture and Inventions of the Past</h1>
 
       </div>
     </div>
