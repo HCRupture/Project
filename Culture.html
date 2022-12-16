@@ -60,7 +60,7 @@
         height: 450px;
       }
 
-      #v-pills-home {
+      #v-pills-tiger, #v-pills-kimchi, #v-pills-sport, #v-pills-flower{
         margin-bottom: 50px;
         border: solid thin #c6c7c8;
         border-radius: 10px;
@@ -135,7 +135,7 @@
         height: 450px;
       }
 
-      #v-pills-home {
+      #v-pills-tiger, #v-pills-kimchi, #v-pills-sport, #v-pills-flower{
         margin-bottom: 50px;
         border: solid thin #c6c7c8;
         border-radius: 10px;
@@ -192,6 +192,10 @@
 
       .container-fluid{
         max-width: 1250px;
+      }
+
+      .imgsymbol{
+        height: 90%;
       }
 
     }
@@ -292,25 +296,25 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
               aria-expanded="false">Menu</a>
             <div class="dropdown-menu">
-              <button class="btn nav-link btn-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+              <button class="btn nav-link btn-link active" id="v-pills-tiger-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-tiger" type="button" role="tab" aria-controls="v-pills-tiger"
                 aria-selected="true">Tiger</button>
-              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Mugunghwa</button>
-              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+              <button class="nav-link" id="v-pills-flower-tab" data-bs-toggle="pill" data-bs-target="#v-pills-flower"
+                type="button" role="tab" aria-controls="v-pills-flower" aria-selected="false">Mugunghwa</button>
+              <button class="nav-link" id="v-pills-sport-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-sport" type="button" role="tab" aria-controls="v-pills-sport"
                 aria-selected="false">Taekwondo</button>
-              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
-                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+              <button class="nav-link" id="v-pills-kimchi-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-kimchi" type="button" role="tab" aria-controls="v-pills-kimchi"
                 aria-selected="false">Kimchi</button>
             </div>
           </li>
         </ul>
         <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <div class="tab-pane fade show active" id="v-pills-tiger" role="tabpanel" aria-labelledby="v-pills-tiger-tab">
             <div class="row">
-              <h3 class="col-12">National Animal: Siberian Tiger</h3>
-              <p id="tabtext" class="col-lg-6">The National animal of South Korea, the Siberian Tiger is an important
+              <h3 class="col-12 pt-lg-2">National Animal: Siberian Tiger</h3>
+              <p id="tabtext" class="col-lg-6 pt-lg-5">The National animal of South Korea, the Siberian Tiger is an important
                 symbol of thier
                 culture.
                 Unfortunately, while there is are no longer any tigers in
@@ -324,16 +328,16 @@
                 still
                 considered endangered.
               </p>
-              <picture>
-                <source media="(min-wdith: 992px)" class="col imgsymbol" srcset="images/tigercrop.jpg" alt="">
+              <picture class="col">
+                <source media="(min-width: 992px)" class="col imgsymbol" srcset="images/Tiger_crop.jpg" alt="">
                 <img src="images/Tiger.jpg" class="imgsymbol col mx-auto d-block" alt="">
               </picture>
             </div>
           </div>
-          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+          <div class="tab-pane fade" id="v-pills-flower" role="tabpanel" aria-labelledby="v-pills-flower-tab">
             <div class="row">
-              <h3 class="col-12">National Flower: Mugungwha</h3>
-              <p id="tabtext" class="col-lg-6">The Mugungwha also known as the rose of sharon is the national flower of
+              <h3 class="col-12 pt-lg-2">National Flower: Mugungwha</h3>
+              <p id="tabtext" class="col-lg-6 pt-lg-5">The Mugungwha also known as the rose of sharon is the national flower of
                 South
                 Korea. The
                 flower
@@ -346,16 +350,16 @@
                 successes and tribulations and stands as the country's
                 noble spirit throughout its many experiences.
               </p>
-              <picture>
-                <source media="(min-width:992x)" srcset="images/hibicrop.JPG">
+              <picture class="col">
+                <source media="(min-width: 992px)" srcset="images/hibicrop.JPG">
                 <img class="imgsymbol col mx-auto d-block" src="images/Hibiscus_Syriacus.JPG">
               </picture>
             </div>
           </div>
-          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+          <div class="tab-pane fade" id="v-pills-sport" role="tabpanel" aria-labelledby="v-pills-sport-tab">
             <div class="row">
-              <h3 class="col-12">National Sport: Taekwondo</h3>
-              <p id="tabtext" class="col-lg-6">One of Koreas most recognized sports is that of its national sport -
+              <h3 class="col-12 pt-lg-2">National Sport: Taekwondo</h3>
+              <p id="tabtext" class="col-lg-6 pt-lg-5">One of Koreas most recognized sports is that of its national sport -
                 Taekwondo.
                 While its
                 origins
@@ -371,13 +375,16 @@
                 awarded to players who perform more advance techniques to
                 land hits while faliing or exiting the matted area results in penalisation.
               </p>
-              <img class="imgsymbol col mx-auto d-block" src="images/taekwondo.jpg">
+              <picture class="col">
+                <source media="(min-width: 992px)" srcset="images/taekwondocrop.JPG">
+                <img class="imgsymbol col mx-auto d-block" src="images/taekwondo.jpg">
+              </picture>
             </div>
           </div>
-          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+          <div class="tab-pane fade" id="v-pills-kimchi" role="tabpanel" aria-labelledby="v-pills-kimchi-tab">
             <div class="row">
-              <h3 class="col-12">National Food: Kimchi</h3>
-              <p id="tabtext" class="col-lg-6">While alos the name of the national dish of South Korea, Kimchi also
+              <h3 class="col-12 pt-lg-2">National Food: Kimchi</h3>
+              <p id="tabtext" class="col-lg-6 pt-lg-5">While alos the name of the national dish of South Korea, Kimchi also
                 refers to
                 the process of
                 fermenting vegetables. Kimchi is typically made with napa
@@ -392,7 +399,10 @@
                 and a widely enjoyed food throughout the country though it has seen little promotion to countries
                 overseas.
               </p>
-              <img class="imgsymbol col mx-auto d-block" src="images/kimchi.jpg">
+              <picture class="col">
+                <source media="(min-width: 992px)" srcset="images/kimchicrop.JPG">
+                <img class="imgsymbol col mx-auto d-block" src="images/kimchi.jpg">
+              </picture>
             </div>
           </div>
 
@@ -406,7 +416,7 @@
                 <img src="Images/bibimbap.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Bibimbap</h5>
-                  <p class="card-text">The term "bibim" meaning "mixing" and "bap" meaning cooked rice. Bibimbap is a
+                  <p class="card-text ">The term "bibim" meaning "mixing" and "bap" meaning cooked rice. Bibimbap is a
                     bowl of warm rice topped with sauted and
                     seasoned vegetables. Common additions include raw / fried egg and sliced beef.</p>
                 </div>
